@@ -277,6 +277,10 @@ a:hover {
     margin-left: 0;
 }
 
+#bloc-2-services img{
+    width: 100%;
+}
+
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
@@ -326,6 +330,8 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    padding-right: 20px ;
+   
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -366,9 +372,10 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 10%;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
+        
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -848,13 +855,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -873,8 +880,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        -webkit-padding-left: constant(safe-area-inset-left);
+        -webkit-padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -883,9 +890,9 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding: 0 20px ;
+        -webkit-padding-left:constant(safe-area-inset-left );
+        -webkit-padding-right:constant(safe-area-inset-right);
     }
 }
 
