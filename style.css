@@ -7,6 +7,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+ body a:focus{
+     color: #fff;
+     border: 2px solid rgba(255, 166, 0, 0.856);
+ }
+
+.col-sm-3 a:focus{
+    border:none;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -14,9 +23,11 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
 }
+
+
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -338,9 +349,9 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:hover{
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
