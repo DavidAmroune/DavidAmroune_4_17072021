@@ -7,14 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
- body a:focus{
+body a:focus, .btn:focus{
      color: #fff;
      border: 2px solid rgba(255, 166, 0, 0.856);
  }
-
-.col-sm-3 a:focus{
-    border:none;
-}
 
 a,
 button {
@@ -785,10 +781,8 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #364577
 }
-
-
 
 .bgc-atomic-tangerine {
     background-color: #8a3052;
